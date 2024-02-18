@@ -1,0 +1,63 @@
+<div class="form-froup row">
+
+    <label class="col-sm-2 col-form-label">EmployeeCode</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="EmployeeCode"
+        placeholder="Enter Employee Code">
+    </div>
+    <label class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Name"
+        placeholder="Enter Name">
+    </div>
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Email"
+        placeholder="Enter Email">
+    </div>
+    <label class="col-sm-2 col-form-label">Phone</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Phone"
+        placeholder="Phone">
+    </div>
+    <label class="col-sm-2 col-form-label">DOB</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="DOB"
+        placeholder="Enter DOB">
+    </div>
+    <label class="col-sm-2 col-form-label">Age</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Age"
+        placeholder="Enter Age">
+    </div>
+    <label class="col-sm-2 col-form-label">skills</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="skills"
+        placeholder="Enter skills">
+    </div>
+    <label class="col-sm-2 col-form-label">address</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="address"
+        placeholder="Enter address">
+    
+    </div>
+    <label class="col-sm-2 col-form-label">Department</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Department"
+        placeholder="Enter Department">
+    </div>
+    <label class="col-sm-2 col-form-label">Status</label>
+    <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="Status"
+        placeholder="Enter Status">
+    </div>
+</div>
+<br>
+
+<button (click)="addEmployee()" *ngIf="emp.EmployeeId==0" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updateEmployee()" *ngIf="emp.EmployeeId!=0" class="btn btn-primary">
+    Update
+</button>
